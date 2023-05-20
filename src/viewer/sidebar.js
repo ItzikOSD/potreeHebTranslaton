@@ -172,7 +172,7 @@ export class Sidebar{
 		// AZIMUTH
 		elToolbar.append(this.createToolIcon(
 			Potree.resourcePath + '/icons/azimuth.svg',
-			'Azimuth',
+			'[title]tt.Azimuth_measurment',
 			() => {
 				$('#menu_measurements').next().slideDown();
 				let measurement = this.measuringTool.startInsertion({
@@ -1236,14 +1236,14 @@ export class Sidebar{
 
 		let languages = [
 			["EN", "en"],
+			["IT", "it"],
+			["עברית", "heb"],
 			["FR", "fr"],
 			["DE", "de"],
 			["JP", "jp"],
-			["ES", "es"],
 			["SE", "se"],
-			["ZH", "zh"],
-			["IT", "it"],
-			["CA", "ca"]
+			["ES", "es"],
+			["ZH", "zh"]
 		];
 
 		let elLanguages = $('#potree_languages');
